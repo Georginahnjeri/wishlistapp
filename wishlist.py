@@ -2,10 +2,10 @@
 import streamlit as st
 from PIL import Image
 
-# Your name
+#my name
 name = "Georginah"
 
-# Wishlist items and their image paths
+#wishlist items and their image paths
 wishlist_items = [
     {"name": "Jeep", "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/jeep.jpeg"},
     {"name": "Massage", "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/massage.jpeg"},
@@ -15,3 +15,8 @@ wishlist_items = [
     {"name": "Beach Vacation", "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/beach.jpeg"},
     {"name": "Perfume", "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/perfume.jpeg"},
 ]
+
+#payment details
+paypal = "georginahnjeri08.com"  
+mpesa = "+254792301678"
+
