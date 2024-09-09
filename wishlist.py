@@ -27,6 +27,9 @@ st.title(f"{name}'s Wishlist 🎁")
 #splitting the items into two columns
 cols = st.columns(2)
 
+#set fixed width for images
+image_width = 300
+
 #display items with images in a grid format
 for idx, item in enumerate(wishlist_items):
     with cols[idx % 2]:
