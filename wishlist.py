@@ -27,16 +27,18 @@ st.title(f"{name}'s Wishlist 🎁")
 #splitting the items into two columns
 cols = st.columns(2)
 
-#set fixed width for images
-image_width = 300
+
+# Set fixed size for images
+fixed_size = (300, 300)  # Width, Height
 
 #display items with images in a grid format
 for idx, item in enumerate(wishlist_items):
     with cols[idx % 2]:
-        # Display the image
+        # Open and resize the image
         image = Image.open(item['image'])
-        st.image(image, caption=item['name'], use_column_width=True)
-        st.write(item['name'])
+        image = image.resize(fixed_size)  # Resize image
+        st.image(image, caption=item['name'], use_column_width=False)
+       
 
         # Button to allow someone to get the item
         if st.button(f'Get Me This {item["name"]} 🤩', key=f'get_{idx}'):
@@ -48,16 +50,19 @@ for idx, item in enumerate(wishlist_items):
             # Payment selection dropdown
             payment_method = st.radio(
                 label="Select Payment Method:",
-                options=['PayPal', 'Send Money (M-Pesa)'],
+                options=['PayPal', 'mpesa'],
                 key=f'payment_method_{idx}'
             )
+            
+            # Debugging output
+            st.write(f"Selected payment method: {payment_method}")
 
             if payment_method == 'PayPal':
                 # Display PayPal email for manual payment
                 st.write("Send money via PayPal to the following email:")
                 st.code(paypal)
 
-            elif payment_method == 'Send Money (M-Pesa)':
+            elif payment_method == 'Mpesa':
                 # Ensure the M-Pesa number is visible
                 st.write("Send money via M-Pesa to the following number 📱:")
                 st.code(mpesa)
