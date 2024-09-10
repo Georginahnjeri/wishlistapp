@@ -30,12 +30,23 @@ def load_items():
         with file_path.open('r') as file:
             return json.load(file)
     else:
+        # Create the file with initial items if it does not exist
+        save_items(wishlist_items)
         return wishlist_items  # Use initial wishlist if no file exists
 
 # Save items to file
 def save_items(items):
     with file_path.open('w') as file:
         json.dump(items, file, indent=4)
+
+# Save items to file with error handling
+def save_items(items):
+    try:
+        with file_path.open('w') as file:
+            json.dump(items, file, indent=4)
+    except Exception as e:
+        st.error(f"An error occurred while saving the file: {e}")
+
 
 # Initialize items
 if 'wishlist_items' not in st.session_state:
