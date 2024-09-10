@@ -1,0 +1,42 @@
+[
+    {
+        "name": "gift card",
+        "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/gift card.jpeg",
+        "taken": false
+    },
+    {
+        "name": "Massage",
+        "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/massage.jpeg",
+        "taken": false
+    },
+    {
+        "name": "Pilates",
+        "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/pilates.jpg",
+        "taken": false
+    },
+    {
+        "name": "Monitor",
+        "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/monitor.jpeg",
+        "taken": false
+    },
+    {
+        "name": "Shopping Spree",
+        "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/shopping.jpeg",
+        "taken": false
+    },
+    {
+        "name": "Beach Vacation",
+        "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/beach.jpeg",
+        "taken": false
+    },
+    {
+        "name": "Perfume",
+        "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/perfume.jpeg",
+        "taken": false
+    },
+    {
+        "name": "skincare",
+        "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/skincare.jpeg",
+        "taken": false
+    }
+]
