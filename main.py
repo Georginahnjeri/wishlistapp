@@ -9,15 +9,16 @@ name = "Georginah"
 
 # Wishlist items and their image paths
 wishlist_items = [
-    {"name": "gift card", "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/gift card.jpeg", "taken": False},
-    {"name": "Massage", "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/massage.jpeg", "taken": False},
-    {"name": "Pilates", "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/pilates.jpg", "taken": False},
-    {"name": "Monitor", "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/monitor.jpeg", "taken": False},
-    {"name": "Shopping Spree", "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/shopping.jpeg", "taken": False},
-    {"name": "Beach Vacation", "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/beach.jpeg", "taken": False},
-    {"name": "Perfume", "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/perfume.jpeg", "taken": False},
-    {"name": "Skincare", "image": "C:/Users/Georginah/Data Analytics Projects/wishlistapp/images/skincare.jpeg", "taken": False},
+    {"name": "gift card", "image": "images/gift card.jpeg", "taken": False},
+    {"name": "Massage", "image": "images/massage.jpeg", "taken": False},
+    {"name": "Pilates", "image": "images/pilates.jpg", "taken": False},
+    {"name": "Monitor", "image": "images/monitor.jpeg", "taken": False},
+    {"name": "Shopping Spree", "image": "images/shopping.jpeg", "taken": False},
+    {"name": "Beach Vacation", "image": "images/beach.jpeg", "taken": False},
+    {"name": "Perfume", "image": "images/perfume.jpeg", "taken": False},
+    {"name": "Skincare", "image": "images/skincare.jpeg", "taken": False},
 ]
+
 
 # File path for JSON storage
 file_path = Path('C:/Users/Georginah/Data Analytics Projects/wishlistapp/wishlist_items.json')
