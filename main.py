@@ -19,10 +19,8 @@ wishlist_items = [
     {"name": "Skincare", "image": "images/skincare.jpeg", "taken": False},
 ]
 
-
 # File path for JSON storage
-file_path = Path('wishlistapp/wishlist_items.json')
-
+file_path = Path(__file__).parent / 'wishlist_items.json'
 
 # Load items from file
 def load_items():
@@ -34,11 +32,6 @@ def load_items():
         save_items(wishlist_items)
         return wishlist_items  # Use initial wishlist if no file exists
 
-# Save items to file
-def save_items(items):
-    with file_path.open('w') as file:
-        json.dump(items, file, indent=4)
-
 # Save items to file with error handling
 def save_items(items):
     try:
@@ -46,7 +39,6 @@ def save_items(items):
             json.dump(items, file, indent=4)
     except Exception as e:
         st.error(f"An error occurred while saving the file: {e}")
-
 
 # Initialize items
 if 'wishlist_items' not in st.session_state:
@@ -122,4 +114,3 @@ if st.button('Reset All Items'):
         item['taken'] = False
     save_items(st.session_state.wishlist_items)
     st.success("All items have been reset to available.")
-
