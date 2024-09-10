@@ -21,7 +21,8 @@ wishlist_items = [
 
 
 # File path for JSON storage
-file_path = Path('C:/Users/Georginah/Data Analytics Projects/wishlistapp/wishlist_items.json')
+file_path = Path('wishlistapp/wishlist_items.json')
+
 
 # Load items from file
 def load_items():
